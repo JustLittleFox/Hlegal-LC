@@ -26,16 +26,102 @@ html {
   font-family: "Montserrat", sans-serif, "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: url(../img/background.svg) no-repeat top center, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  background: url(../img/background.svg) no-repeat top center, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
 }
 
 .container {
-  max-width: 375px;
-  padding: 0 30px;
+  max-width: 1200px;
+  min-width: 375px;
   margin: 0 auto;
 }
 
 .visually-hidden {
   display: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  padding: 0 15px;
+  padding-top: 45px;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-top: 12px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, -webkit-min-content);
+    grid-template-rows: repeat(3, min-content);
+  }
+}
+
+.header-top {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: rgba(245, 245, 250, 0.2);
+  padding: 12px 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .header-top {
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  .header-top__adress, .header-top__fb {
+    display: block;
+  }
+}
+
+.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.lang a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 5px 7px;
+  border-radius: 8px;
+}
+.lang a.active {
+  background: #F0145A;
+}
+.lang a:hover {
+  background: #F0145A;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu__btn {
+  margin-top: 11px;
+  padding-right: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

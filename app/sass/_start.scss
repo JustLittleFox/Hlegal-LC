@@ -12,13 +12,13 @@ html {
     font-weight: 400;
     font-style: normal;
     background: url(../img/background.svg) no-repeat top center, 
-                linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+                linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
                 
 }
 
 .container {
-    max-width: 375px;
-    padding: 0 30px;
+    max-width: 1200px;
+    min-width: 375px;
     margin: 0 auto;
 }
 
