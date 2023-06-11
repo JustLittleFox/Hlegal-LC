@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,10 +45,12 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .header__nav {
   display: flex;
   justify-content: space-between;
 }
+
 .header__nav-list {
   list-style: none;
   padding: 0;
@@ -40,6 +58,7 @@ html {
   flex-direction: row;
   align-items: flex-start;
 }
+
 .header__nav-btn {
   text-transform: uppercase;
   font-weight: 700;
@@ -56,12 +75,15 @@ html {
   margin-right: 17px;
   transition-duration: 0.3s;
 }
+
 .header__nav-btn.active {
   background: #F0145A;
 }
+
 .header__nav-btn:hover {
   background: #F0145A;
 }
+
 .header__nav-tel {
   font-weight: 700;
   font-size: 16px;
@@ -73,10 +95,12 @@ html {
   margin-right: -15px;
   transition-duration: 0.3s;
 }
+
 .header__nav-tel:hover {
   color: #F0145A;
   text-decoration: underline;
 }
+
 .header__nav-place {
   text-decoration: none;
   font-weight: 400;
@@ -85,21 +109,7 @@ html {
   text-align: right;
   color: #FFFFFF;
 }
+
 .header__nav-bot {
   display: inline-flex;
 }
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}/*# sourceMappingURL=style.css.map */
