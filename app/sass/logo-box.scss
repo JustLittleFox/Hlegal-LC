@@ -10,4 +10,8 @@
             height: auto;
         }
     }
+    @media (min-width: 1024px) {
+        grid-row: 1 /-1;
+        grid-column: 1;
+    }
 }

@@ -1,7 +1,23 @@
 .phone {
+    display: inline-flex;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
     text-decoration: none;
+    @media (min-width: 768px) {
+        & {
+            align-items: center;
+        }
+        &::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #E6E6F0;
+            border-radius: 10px;
+            align-self: center;
+            margin-right: 6px;
+            margin-left: 6px;
+        }
+    }
 }

@@ -20,5 +20,8 @@
     & a:hover {
         background: #F0145A; 
     }
+    @media (min-width: 768px) {
+        margin-right: 6px;
+    }
 
 }

@@ -1,4 +1,36 @@
 .menu {
+    position: relative;
+
+    &__list {
+        position: absolute;
+        right: 0;
+        top: auto;
+        list-style: none;
+        display: block;
+        background: rgba(50, 50, 100, 0.7);
+        border-radius: 12px;
+        
+    }
+    &__list li {
+        margin: 0 12px;
+        padding-bottom: 7px;
+        padding-top: 7px;
+       
+    }
+    &__list a {
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #24A3FF;
+        padding: 10px 120px;
+        background: #F5F5FA;;
+        border-radius: 12px;
+        display: block;
+        width: 100%;
+        
+    }
     &__btn {
         margin-top: 11px;
         padding-right: 0;
@@ -25,5 +57,23 @@
             margin-right: 16px;
         }
         
+    }
+    @media (min-width: 1024px) {
+        & {
+            justify-self: end;
+        }
+        &__list {
+            margin-top: 10px;
+        }
+        &__list a {
+            margin-right: 0;
+            margin-left: 16px;
+            
+        }
+    }
+    @media (min-width: 1440px) {
+        & {
+            margin-top: 5px;
+        }
     }
 }

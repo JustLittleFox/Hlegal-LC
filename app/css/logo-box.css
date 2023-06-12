@@ -13,4 +13,10 @@
     height: auto;
   }
 }
+@media (min-width: 1024px) {
+  .logo-box {
+    grid-row: 1/-1;
+    grid-column: 1;
+  }
+}
 /*# sourceMappingURL=logo-box.css.map */

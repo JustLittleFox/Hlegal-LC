@@ -10,16 +10,44 @@ html {
 .body {
     font-family: 'Montserrat', sans-serif, 'Arial', sans-serif;
     font-weight: 400;
-    font-style: normal;
-    background: url(../img/background.svg) no-repeat top center, 
-                linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
-                @media (min-width: 768px) {
-                    background: url(../img/background-tablet-sd.svg) no-repeat top center, 
-                    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
-                    
-                    
-                }
-                
+    font-style: normal;          
+}
+
+.background {
+    background: url(../img/background.svg) no-repeat center top, 
+    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+    &::after {
+        content: '';
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+    &::before {
+        content: '';
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+    }
+    @media (min-width: 768px) {
+        background-size: 893px 984px, cover;      
+    }
+    @media (min-width: 1024px) {
+        background-size: 669px 768px, cover;
+    }
+    @media (min-width: 1440px) {
+        background-size: 697px 799px, cover;
+        
+    }
 }
 
 .img-responsive {
@@ -28,9 +56,10 @@ html {
 } 
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     min-width: 375px;
     margin: 0 auto;
+    height: 2000px;
 }
 
 .visually-hidden {
