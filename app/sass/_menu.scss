@@ -6,4 +6,24 @@
         background: transparent;
         cursor: pointer;
     }
+    @media (min-width: 768px) {
+        &__btn {
+            display: none;
+        }
+        &__list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-top: 25px;
+        }
+        &__list a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-right: 16px;
+        }
+        
+    }
 }

@@ -1,0 +1,13 @@
+.logo-box {
+    margin-top: 15px;
+    display: flex;
+    @media (min-width: 768px) {
+        & {
+            margin-top: 25px;
+        }
+        &__link img {
+            width: 130px;
+            height: auto;
+        }
+    }
+}

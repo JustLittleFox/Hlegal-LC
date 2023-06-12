@@ -1,0 +1,16 @@
+.logo-box {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .logo-box {
+    margin-top: 25px;
+  }
+  .logo-box__link img {
+    width: 130px;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=logo-box.css.map */
