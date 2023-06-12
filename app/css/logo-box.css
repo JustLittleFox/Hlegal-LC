@@ -6,7 +6,7 @@
 }
 @media (min-width: 768px) {
   .logo-box {
-    margin-top: 25px;
+    margin-top: 29px;
   }
   .logo-box__link img {
     width: 130px;
@@ -15,6 +15,7 @@
 }
 @media (min-width: 1024px) {
   .logo-box {
+    margin-top: 26px;
     grid-row: 1/-1;
     grid-column: 1;
   }

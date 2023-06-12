@@ -3,7 +3,7 @@
     display: flex;
     @media (min-width: 768px) {
         & {
-            margin-top: 25px;
+            margin-top: 29px;
         }
         &__link img {
             width: 130px;
@@ -11,6 +11,7 @@
         }
     }
     @media (min-width: 1024px) {
+        margin-top: 26px;
         grid-row: 1 /-1;
         grid-column: 1;
     }
