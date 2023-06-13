@@ -1,0 +1,48 @@
+.main {
+    margin-top: 30px;
+    padding: 0 30px;
+    &__head {
+        margin-bottom: 30px;
+    }
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;  
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+    }
+    &__link svg {
+        margin-left: 1px;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-top: 10px;
+    }
+    @media (min-width: 768px) {
+        padding: 0 60px;
+        margin-top: 60px;
+        &__text {
+            padding-right: 20px;
+            font-size: 38px;
+            line-height: 43px;
+            margin-top: 11px;
+        }
+    }
+    @media (min-width: 1024px) {
+        margin-top: 70px;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 62px;
+    }
+}

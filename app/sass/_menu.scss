@@ -39,14 +39,31 @@
         
     }
     &__btn {
+        background-image: url(../img/btn-burger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
         margin-top: 11px;
-        padding-right: 0;
+        width: 32px;
+        height: 32px;
+        padding: 0 5px;
         border: none;
-        background: transparent;
+        border-radius: 8px;
+        background-color: transparent;
         cursor: pointer;
+    }
+    &__btn.close {
+        background-image: url(../img/close-burger.svg);
+    }
+    &__btn:active {
+        background: #E6E6F0;
+       
     }
 
     @media (min-width: 768px) {
+        grid-column: 3 / -2;
+        grid-row: 3;
+        padding: 0 45px;
 
         &__btn {
             display: none;
@@ -60,8 +77,8 @@
             display: flex;
             list-style: none;
             padding: 0;
-            
-            margin-top: 25px;
+            height: auto;
+            margin-top: 5px;
         }
         &__list li {
             padding: 0;
@@ -81,21 +98,25 @@
         
     }
     @media (min-width: 1024px) {
+        margin-top: -40px;
+        padding-right: 0;
         & {
             justify-self: end;
         }
         &__list {
-            margin-top: 10px;
+            margin-top: 0;
+            white-space: nowrap;
         }
         &__list a {
+            
             margin-right: 0;
             margin-left: 16px;
             
         }
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
         & {
-            margin-top: 5px;
+            
         }
     }
 }

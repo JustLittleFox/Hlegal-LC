@@ -13,7 +13,7 @@
         & {
             position: static;
             background: none;
-            padding: 0;
+            padding: 38px 44px;
             justify-content: flex-start;
         }
         &__adress,
@@ -51,17 +51,19 @@
     }
     @media (min-width: 1024px) {
         & {
+            white-space: nowrap;
             grid-column: 2 / -1;
             justify-content: flex-end;
             display: inline-flex;    
             align-items: center;    
-            padding-top: 20px;  
+            margin-top: -15px;
+            padding-right: 0;  
             
         }
 
     }
-    @media (min-width: 1440px) {
-        padding-top: 25px;
+    @media (min-width: 1200px) {
+        
     }
 }
     

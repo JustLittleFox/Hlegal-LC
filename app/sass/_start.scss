@@ -15,7 +15,7 @@ html {
 
 .background {
     background: url(../img/background.svg) no-repeat center top, 
-    linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+    linear-gradient(254deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
     border-radius: 0 0 12px 12px;
     position: relative;
     &::after {
@@ -39,12 +39,12 @@ html {
         bottom: -20px;
     }
     @media (min-width: 768px) {
-        background-size: 893px 984px, cover;      
+        background-size: 893px 1024px, cover;      
     }
     @media (min-width: 1024px) {
         background-size: 669px 768px, cover;
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1200px) {
         background-size: 697px 799px, cover;
         
     }
@@ -59,7 +59,6 @@ html {
     max-width: 1440px;
     min-width: 375px;
     margin: 0 auto;
-    height: 2000px;
 }
 
 .visually-hidden {
