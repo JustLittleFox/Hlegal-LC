@@ -1,0 +1,103 @@
+.slider {
+    margin-top: 50px;
+    font-size: 0;
+
+    &__box {
+        border-radius: 12px;
+        background: #F5F5FA;
+    }
+
+    &__box-img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        object-fit: cover;
+        height: 500px;
+    }
+
+    &__box-text {
+        padding: 0 30px;
+        margin-top: 30px;
+    }
+
+    &__box-link {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24A3FF;
+    }
+
+    &__box-headline {
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        word-wrap: break-word;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__box-name {
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #B3B3BA;
+    }
+
+    &__box-desc {
+        margin-top: 5px;
+        padding-bottom: 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #B3B3BA;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    &__btn {
+        content: '';
+        cursor: pointer;
+        border: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #24A3FF;
+        opacity: 0.2;
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+
+    &__btn.active {
+        opacity: unset;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 72px;
+
+        &__box-headline {
+            font-size: 38px;
+            line-height: 46px;
+
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 79px;
+
+    }
+
+
+}
