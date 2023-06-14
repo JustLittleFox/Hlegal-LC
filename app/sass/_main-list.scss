@@ -2,16 +2,20 @@
     &__item {
         margin-bottom: 30px;
     }
+
     &__item:last-child {
         padding-bottom: 60px;
     }
+
     &__box {
         display: flex;
         flex-direction: column;
     }
+
     &__box-img {
         width: 92px;
     }
+
     &__box-link {
         margin-top: 30px;
         text-decoration: none;
@@ -20,6 +24,7 @@
         line-height: 27px;
         color: #24A3FF;
     }
+
     &__box-desc {
         margin-top: 15px;
         font-weight: 400;
@@ -27,24 +32,29 @@
         line-height: 26px;
         color: #FFFFFF;
     }
+
     @media (min-width: 768px) {
         margin: 63px -30px 60px;
         font-size: 0;
         display: flex;
         flex-wrap: wrap;
+
         &__item {
             display: flex;
             width: 50%;
             padding: 0 30px;
             margin-bottom: 60px;
         }
+
         &__box {
             height: 100%;
         }
-        
+
     }
+
     @media (min-width: 1024px) {
         margin-top: 60px;
+
         &__item {
             width: 33.333%;
         }

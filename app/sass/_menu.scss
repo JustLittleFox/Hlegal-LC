@@ -1,27 +1,27 @@
 .menu {
-      margin-top: 5px; 
-       
+    margin-top: 5px;
+
     &__list {
         display: none;
         position: absolute;
         left: 0;
         top: auto;
         list-style: none;
-        padding: 0 12px 12px 12px;  
+        padding: 0 12px 12px 12px;
         background: rgba(50, 50, 100, 0.7);
         border-radius: 12px;
         width: 100%;
         height: calc(100vh - 250px);
         overflow: auto;
-        
+
     }
+
     &__list.active {
         display: block;
     }
-    &__list li {
-       
-       
-    }
+
+    &__list li {}
+
     &__list a {
         text-align: center;
         text-decoration: none;
@@ -31,13 +31,15 @@
         color: #24A3FF;
         padding: 7px 120px;
         margin-top: 15px;
-        background: #F5F5FA;;
+        background: #F5F5FA;
+        ;
         border-radius: 12px;
         display: block;
-        
-        
-        
+
+
+
     }
+
     &__btn {
         background-image: url(../img/btn-burger.svg);
         background-repeat: no-repeat;
@@ -52,12 +54,14 @@
         background-color: transparent;
         cursor: pointer;
     }
+
     &__btn.close {
         background-image: url(../img/close-burger.svg);
     }
+
     &__btn:active {
         background: #E6E6F0;
-       
+
     }
 
     @media (min-width: 768px) {
@@ -68,9 +72,11 @@
         &__btn {
             display: none;
         }
+
         & {
             position: static;
         }
+
         &__list {
             position: static;
             background: none;
@@ -80,10 +86,12 @@
             height: auto;
             margin-top: 5px;
         }
+
         &__list li {
             padding: 0;
             margin: 0;
         }
+
         &__list a {
             background: none;
             padding: 0;
@@ -95,28 +103,31 @@
             margin-right: 16px;
             width: auto;
         }
-        
+
     }
+
     @media (min-width: 1024px) {
         margin-top: -40px;
         padding-right: 0;
+
         & {
             justify-self: end;
         }
+
         &__list {
             margin-top: 0;
             white-space: nowrap;
         }
+
         &__list a {
-            
+
             margin-right: 0;
             margin-left: 16px;
-            
+
         }
     }
+
     @media (min-width: 1200px) {
-        & {
-            
-        }
+        & {}
     }
 }

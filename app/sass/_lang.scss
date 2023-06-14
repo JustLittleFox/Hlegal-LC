@@ -2,6 +2,7 @@
     display: flex;
     list-style: none;
     padding-left: 0;
+
     & a {
         text-decoration: none;
         font-weight: 700;
@@ -14,12 +15,15 @@
         padding: 5px 7px;
         border-radius: 8px;
     }
+
     & a.active {
-        background: #F0145A; 
+        background: #F0145A;
     }
+
     & a:hover {
-        background: #F0145A; 
+        background: #F0145A;
     }
+
     @media (min-width: 768px) {
         margin-right: 6px;
     }
