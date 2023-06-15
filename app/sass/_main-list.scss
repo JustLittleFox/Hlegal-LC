@@ -59,4 +59,8 @@
             width: 33.333%;
         }
     }
+
+    @media (min-width: 1200px) {
+        margin-bottom: -7px;
+    }
 }
