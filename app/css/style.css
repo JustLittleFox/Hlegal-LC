@@ -802,30 +802,6 @@ html {
   line-height: 22px;
   color: #B3B3BA;
 }
-.slider__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-}
-.slider__btn {
-  content: "";
-  cursor: pointer;
-  border: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #24A3FF;
-  opacity: 0.2;
-  margin-right: 7px;
-  margin-left: 7px;
-}
-.slider__btn.active {
-  opacity: unset;
-}
 @media (min-width: 768px) {
   .slider {
     margin-top: 72px;
@@ -878,6 +854,101 @@ html {
        object-fit: cover;
     height: 344px;
     max-width: 30%;
+  }
+}
+
+.slider-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+.slider-buttons__btn {
+  content: "";
+  cursor: pointer;
+  border: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #24A3FF;
+  opacity: 0.2;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+.slider-buttons__btn.active {
+  opacity: unset;
+}
+
+.trust-list {
+  margin-top: 60px;
+}
+.trust-list__headline {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+}
+.trust-list__item {
+  width: 100%;
+  height: 120px;
+}
+.trust-list__item_01 {
+  background: url(../img/hillel-logo.svg) no-repeat center, rgb(28, 66, 128);
+}
+.trust-list__item_02 {
+  background: url(../img/wb-logo.svg) no-repeat center, rgb(20, 54, 70);
+}
+.trust-list__item_03 {
+  background: url(../img/tapgerine-logo.svg) no-repeat center, rgb(244, 139, 48);
+}
+.trust-list__item_04 {
+  background: url(../img/3dlook-logo.svg) no-repeat center, rgb(158, 77, 195);
+}
+.trust-list__item_05 {
+  background: url(../img/orangear-logo.svg) no-repeat center, rgb(253, 147, 57);
+}
+.trust-list__item_06 {
+  background: url(../img/adteligent-logo.svg) no-repeat center, rgb(226, 226, 228);
+}
+@media (min-width: 768px) {
+  .trust-list__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .trust-list__item.visually-hidden {
+    display: block;
+  }
+  .trust-list__item_07 {
+    background: url(../img/clicky-logo.svg) no-repeat center, rgb(199, 28, 54);
+  }
+  .trust-list__item_08 {
+    background: url(../img/ecolease-logo.svg) no-repeat center, rgb(220, 243, 249);
+  }
+  .trust-list__item_09 {
+    background: url(../img/infra-logo.svg) no-repeat center, rgb(234, 234, 234);
+  }
+  .trust-list__item_10 {
+    background: url(../img/city-logo.svg) no-repeat center, rgb(40, 34, 64);
+  }
+  .trust-list__item_11 {
+    background: url(../img/art-logo.svg) no-repeat center, rgb(29, 69, 104);
+  }
+  .trust-list__item_12 {
+    background: url(../img/ultumate-logo.svg) no-repeat center, rgb(0, 0, 0);
+  }
+}
+@media (min-width: 1024px) {
+  .trust-list__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=style.css.map */

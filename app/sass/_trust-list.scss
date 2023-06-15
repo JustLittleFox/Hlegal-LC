@@ -1,0 +1,100 @@
+.trust-list {
+    margin-top: 60px;
+
+    &__headline {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+    }
+
+    &__item {
+        width: 100%;
+        height: 120px;
+    }
+
+    &__item_01 {
+        background: url(../img/hillel-logo.svg) no-repeat center,
+            rgba(28, 66, 128, 1);
+    }
+
+    &__item_02 {
+        background: url(../img/wb-logo.svg) no-repeat center,
+            rgba(20, 54, 70, 1);
+    }
+
+    &__item_03 {
+        background: url(../img/tapgerine-logo.svg) no-repeat center,
+            rgba(244, 139, 48, 1);
+    }
+
+    &__item_04 {
+        background: url(../img/3dlook-logo.svg) no-repeat center,
+            rgba(158, 77, 195, 1);
+    }
+
+    &__item_05 {
+        background: url(../img/orangear-logo.svg) no-repeat center,
+            rgba(253, 147, 57, 1);
+    }
+
+    &__item_06 {
+        background: url(../img/adteligent-logo.svg) no-repeat center,
+            rgba(226, 226, 228, 1);
+    }
+
+    @media (min-width: 768px) {
+        // display: grid;
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+
+        &__item.visually-hidden {
+            display: block;
+        }
+
+        &__item_07 {
+            background: url(../img/clicky-logo.svg) no-repeat center,
+                rgba(199, 28, 54, 1);
+        }
+
+        &__item_08 {
+            background: url(../img/ecolease-logo.svg) no-repeat center,
+                rgba(220, 243, 249, 1);
+        }
+
+        &__item_09 {
+            background: url(../img/infra-logo.svg) no-repeat center,
+                rgba(234, 234, 234, 1);
+        }
+
+        &__item_10 {
+            background: url(../img/city-logo.svg) no-repeat center,
+                rgba(40, 34, 64, 1);
+        }
+
+        &__item_11 {
+            background: url(../img/art-logo.svg) no-repeat center,
+                rgba(29, 69, 104, 1);
+        }
+
+        &__item_12 {
+            background: url(../img/ultumate-logo.svg) no-repeat center,
+                rgba(0, 0, 0, 1);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &__grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+    }
+}
