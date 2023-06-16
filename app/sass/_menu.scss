@@ -8,7 +8,7 @@
         top: auto;
         list-style: none;
         padding: 0 12px 12px 12px;
-        background: rgba(50, 50, 100, 0.7);
+        background: $menu-list-bg;
         border-radius: 12px;
         width: 100%;
         height: calc(100vh - 250px);
@@ -20,24 +20,18 @@
         display: block;
     }
 
-    &__list li {}
-
     &__list a {
         text-align: center;
         text-decoration: none;
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
-        color: #24A3FF;
+        color: $links-btn-color;
         padding: 7px 120px;
         margin-top: 15px;
-        background: #F5F5FA;
-        ;
+        background: $menu-list-link;
         border-radius: 12px;
         display: block;
-
-
-
     }
 
     &__btn {
@@ -60,7 +54,7 @@
     }
 
     &__btn:active {
-        background: #E6E6F0;
+        background: $dots-grey-color;
 
     }
 
@@ -99,7 +93,7 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
-            color: #FFFFFF;
+            color: $text-color;
             margin-right: 16px;
             width: auto;
         }
@@ -127,7 +121,4 @@
         }
     }
 
-    @media (min-width: 1200px) {
-        & {}
-    }
 }

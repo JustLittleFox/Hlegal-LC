@@ -374,6 +374,7 @@ html {
     margin-left: 16px;
   }
 }
+
 .logo-box {
   margin-top: 15px;
   display: -webkit-box;
@@ -428,7 +429,7 @@ html {
 }
 .hero__link {
   padding: 9px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
 }
 @media (min-width: 768px) {
@@ -486,8 +487,7 @@ html {
   margin-right: 29px;
 }
 .experience__btn.active {
-  background-color: transparent;
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -875,6 +875,13 @@ html {
 .slider__box {
   border-radius: 12px;
   background: #F5F5FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .slider__box-img {
   border-top-left-radius: 12px;
@@ -934,6 +941,15 @@ html {
   .slider {
     margin-top: 72px;
   }
+  .slider__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .slider__box-headline {
     font-size: 38px;
     line-height: 46px;
@@ -950,9 +966,13 @@ html {
     margin-top: 79px;
   }
   .slider__box {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .slider__box-img {
     -o-object-fit: cover;
@@ -1002,22 +1022,23 @@ html {
   height: 120px;
 }
 .trust-list__item_01 {
-  background: url(../img/hillel-logo.svg) no-repeat center, rgb(28, 66, 128);
+  background: url(../img/hillel-logo.svg) no-repeat center, #1C4280;
 }
 .trust-list__item_02 {
-  background: url(../img/wb-logo.svg) no-repeat center, rgb(20, 54, 70);
+  background: url(../img/wb-logo.svg) no-repeat center, #143646;
 }
 .trust-list__item_03 {
-  background: url(../img/tapgerine-logo.svg) no-repeat center, rgb(244, 139, 48);
+  background: url(../img/tapgerine-logo.svg) no-repeat center, -webkit-gradient(linear, left bottom, left top, from(#F48B30), to(#F48B30)), #F48B30;
+  background: url(../img/tapgerine-logo.svg) no-repeat center, linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
 }
 .trust-list__item_04 {
-  background: url(../img/3dlook-logo.svg) no-repeat center, rgb(158, 77, 195);
+  background: url(../img/3dlook-logo.svg) no-repeat center, #9E4DC3;
 }
 .trust-list__item_05 {
-  background: url(../img/orangear-logo.svg) no-repeat center, rgb(253, 147, 57);
+  background: url(../img/orangear-logo.svg) no-repeat center, #FD9339;
 }
 .trust-list__item_06 {
-  background: url(../img/adteligent-logo.svg) no-repeat center, rgb(226, 226, 228);
+  background: url(../img/adteligent-logo.svg) no-repeat center, #E2E2E4;
 }
 @media (min-width: 768px) {
   .trust-list__item {
@@ -1036,22 +1057,22 @@ html {
     overflow: visible;
   }
   .trust-list__item_07 {
-    background: url(../img/clicky-logo.svg) no-repeat center, rgb(199, 28, 54);
+    background: url(../img/clicky-logo.svg) no-repeat center, #C71C36;
   }
   .trust-list__item_08 {
-    background: url(../img/ecolease-logo.svg) no-repeat center, rgb(220, 243, 249);
+    background: url(../img/ecolease-logo.svg) no-repeat center, #DCF3F9;
   }
   .trust-list__item_09 {
-    background: url(../img/infra-logo.svg) no-repeat center, rgb(234, 234, 234);
+    background: url(../img/infra-logo.svg) no-repeat center, #EAEAEA;
   }
   .trust-list__item_10 {
-    background: url(../img/city-logo.svg) no-repeat center, rgb(40, 34, 64);
+    background: url(../img/city-logo.svg) no-repeat center, #282240;
   }
   .trust-list__item_11 {
-    background: url(../img/art-logo.svg) no-repeat center, rgb(29, 69, 104);
+    background: url(../img/art-logo.svg) no-repeat center, #1D4568;
   }
   .trust-list__item_12 {
-    background: url(../img/ultumate-logo.svg) no-repeat center, rgb(0, 0, 0);
+    background: url(../img/ultumate-logo.svg) no-repeat center, #000000;
   }
 }
 @media (min-width: 991px) {
@@ -1096,7 +1117,7 @@ html {
   padding: 0;
 }
 .publications__item {
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .publications__item {
   margin-bottom: 28px;

@@ -18,32 +18,32 @@
 
     &__item_01 {
         background: url(../img/hillel-logo.svg) no-repeat center,
-            rgba(28, 66, 128, 1);
+            $trust-list-bg-01;
     }
 
     &__item_02 {
         background: url(../img/wb-logo.svg) no-repeat center,
-            rgba(20, 54, 70, 1);
+            $trust-list-bg-02;
     }
 
     &__item_03 {
         background: url(../img/tapgerine-logo.svg) no-repeat center,
-            rgba(244, 139, 48, 1);
+            $trust-list-bg-03;
     }
 
     &__item_04 {
         background: url(../img/3dlook-logo.svg) no-repeat center,
-            rgba(158, 77, 195, 1);
+            $trust-list-bg-04;
     }
 
     &__item_05 {
         background: url(../img/orangear-logo.svg) no-repeat center,
-            rgba(253, 147, 57, 1);
+            $trust-list-bg-05;
     }
 
     &__item_06 {
         background: url(../img/adteligent-logo.svg) no-repeat center,
-            rgba(226, 226, 228, 1);
+            $trust-list-bg-06;
     }
 
     @media (min-width: 768px) {
@@ -68,32 +68,32 @@
 
         &__item_07 {
             background: url(../img/clicky-logo.svg) no-repeat center,
-                rgba(199, 28, 54, 1);
+                $trust-list-bg-07;
         }
 
         &__item_08 {
             background: url(../img/ecolease-logo.svg) no-repeat center,
-                rgba(220, 243, 249, 1);
+                $trust-list-bg-08;
         }
 
         &__item_09 {
             background: url(../img/infra-logo.svg) no-repeat center,
-                rgba(234, 234, 234, 1);
+                $trust-list-bg-09;
         }
 
         &__item_10 {
             background: url(../img/city-logo.svg) no-repeat center,
-                rgba(40, 34, 64, 1);
+                $trust-list-bg-10;
         }
 
         &__item_11 {
             background: url(../img/art-logo.svg) no-repeat center,
-                rgba(29, 69, 104, 1);
+                $trust-list-bg-11;
         }
 
         &__item_12 {
             background: url(../img/ultumate-logo.svg) no-repeat center,
-                rgba(0, 0, 0, 1);
+                $trust-list-bg-12;
         }
     }
 

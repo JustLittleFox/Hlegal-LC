@@ -15,7 +15,7 @@
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
-        color: #B3B3BA;
+        color: $btn-grey-color;
         white-space: nowrap;
         background-color: transparent;
         border: none;
@@ -26,16 +26,11 @@
     }
 
     &__btn.active {
-        background-color: transparent;
-        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        @include gradient-text-btn;
     }
 
     &__text {
-        border-top: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid $border-color;
         margin-top: 30px;
         padding-left: 6px;
         margin-bottom: auto;
@@ -47,14 +42,14 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
-        color: #FFFFFF;
+        color: $text-color;
     }
 
     &__paragraph {
         font-weight: 400;
         font-size: 19px;
         line-height: 30px;
-        color: #FFFFFF;
+        color: $text-color;
         margin-top: 30px;
     }
 
@@ -128,7 +123,7 @@
             align-items: center;
             padding-left: 60px;
             border-top: none;
-            border-left: 4px solid rgba(255, 255, 255, 0.3);
+            border-left: 4px solid $border-color;
         }
 
         &__headline {

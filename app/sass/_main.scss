@@ -15,7 +15,7 @@
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #24A3FF;
+        color: $links-btn-color;
     }
 
     &__link svg {
@@ -26,11 +26,7 @@
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        @include gradient-text;
         margin-top: 10px;
     }
 

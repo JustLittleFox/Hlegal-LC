@@ -22,7 +22,7 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 27px;
-        color: #24A3FF;
+        color: $links-btn-color;
     }
 
     &__box-desc {
@@ -30,7 +30,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
-        color: #FFFFFF;
+        color: $text-color;
     }
 
     @media (min-width: 768px) {

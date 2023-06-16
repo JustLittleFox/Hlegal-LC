@@ -11,7 +11,7 @@
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
-        color: #FFFFFF;
+        color: $text-color;
         height: 100%;
     }
 
@@ -21,7 +21,7 @@
 
     &__link {
         padding: 9px;
-        border: 2px solid rgba(255, 255, 255, 0.5);
+        border: 2px solid $border-color;
         border-radius: 50%;
     }
 

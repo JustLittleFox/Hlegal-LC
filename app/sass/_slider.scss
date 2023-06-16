@@ -120,7 +120,7 @@
     }
 
     .slick-dots button {
-        background: #24A3FF;
+        background: $links-btn-color;
         opacity: 0.2;
         border-radius: 50%;
         content: '';
@@ -140,7 +140,9 @@
 
     &__box {
         border-radius: 12px;
-        background: #F5F5FA;
+        background: $menu-list-link;
+        display: flex;
+        flex-direction: column;
     }
 
     &__box-img {
@@ -165,7 +167,7 @@
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #24A3FF;
+        color: $links-btn-color;
     }
 
     &__box-headline {
@@ -174,11 +176,7 @@
         font-size: 30px;
         line-height: 37px;
         word-wrap: break-word;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        @include gradient-text;
     }
 
     &__box-name {
@@ -186,7 +184,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
-        color: #B3B3BA;
+        color: $btn-grey-color;
     }
 
     &__box-desc {
@@ -195,11 +193,16 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
-        color: #B3B3BA;
+        color: $btn-grey-color;
     }
 
     @media (min-width: 768px) {
         margin-top: 72px;
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__box-headline {
             font-size: 38px;
@@ -218,7 +221,8 @@
         margin-top: 79px;
 
         &__box {
-            display: flex !important;
+            display: flex;
+            flex-direction: row;
         }
 
         &__box-img {

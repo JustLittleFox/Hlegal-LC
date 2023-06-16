@@ -2,7 +2,7 @@
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-    background: rgba(245, 245, 250, 0.2);
+    background: $header-bg-color;
     padding: 12px 15px;
     width: 100%;
     position: fixed;
@@ -33,7 +33,7 @@
             content: '';
             width: 6px;
             height: 6px;
-            background: #E6E6F0;
+            background: $dots-grey-color;
             border-radius: 10px;
             align-self: center;
             margin-right: 6px;
@@ -43,7 +43,7 @@
             content: '';
             width: 6px;
             height: 6px;
-            background: #E6E6F0;
+            background: $dots-grey-color;
             border-radius: 10px;
             align-self: center;
             margin-right: 6px;
@@ -55,7 +55,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
-            color: #FFFFFF;
+            color: $text-color;
         }
 
     }

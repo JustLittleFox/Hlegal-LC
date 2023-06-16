@@ -12,18 +12,14 @@
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #24A3FF;
+        color: $links-btn-color;
     }
 
     &__hero {
         font-weight: 700;
         font-size: 30px;
         line-height: 37px;
-        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        @include gradient-text;
         margin-top: 3px;
     }
 
@@ -34,7 +30,7 @@
     }
 
     &__item {
-        background-color: #fff;
+        background-color: $text-color;
     }
 
     &__item {
@@ -61,7 +57,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
-        color: #24A3FF;
+        color: $links-btn-color;
     }
 
     &__box-paragraph {
@@ -72,7 +68,7 @@
         line-height: 15px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #B3B3BA;
+        color: $btn-grey-color;
     }
 
     &__box-desc {
@@ -80,8 +76,8 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
-        color: #000000;
-        border-top: 4px solid rgba(230, 230, 240, 1);
+        color: $text-black-color;
+        border-top: 4px solid $border-color-02;
         padding-top: 15px;
         padding-bottom: 30px;
 

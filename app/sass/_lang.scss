@@ -17,11 +17,11 @@
     }
 
     & a.active {
-        background: #F0145A;
+        background: $button-bg-color;
     }
 
     & a:hover {
-        background: #F0145A;
+        background: $button-bg-color;
     }
 
     @media (min-width: 768px) {
