@@ -1115,13 +1115,14 @@ html {
 .publications__list {
   margin-top: 30px;
   padding: 0;
+  padding-bottom: 30px;
 }
 .publications__item {
+  border-radius: 8px;
   background-color: #FFFFFF;
 }
-.publications__item {
+.publications__item:not(:last-child) {
   margin-bottom: 28px;
-  border-radius: 8px;
 }
 .publications__box-img {
   -o-object-fit: cover;
@@ -1203,5 +1204,63 @@ html {
     height: 100%;
     grid-column: 3;
   }
+}
+
+.footer {
+  text-align: center;
+  border-top: 2px solid rgb(230, 230, 240);
+  padding: 30px;
+}
+.footer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__place-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+.footer__place-link {
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.footer__fb {
+  margin-top: 20px;
+}
+.footer__phone {
+  text-decoration: none;
+  color: #46466E;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 7px;
+}
+.footer__mail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: #24A3FF;
+  margin-top: 10px;
+}
+.footer__policity {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

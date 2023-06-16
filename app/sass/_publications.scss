@@ -24,19 +24,20 @@
     }
 
     &__list {
-
         margin-top: 30px;
         padding: 0;
+        padding-bottom: 30px;
     }
 
     &__item {
+        border-radius: 8px;
         background-color: $text-color;
     }
 
-    &__item {
+    &__item:not(:last-child) {
         margin-bottom: 28px;
-        border-radius: 8px;
     }
+
 
     &__box-img {
         object-fit: cover;
