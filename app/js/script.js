@@ -1,3 +1,9 @@
+$('.js-slider').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+});
+
 const btn = document.querySelector('.js-menu-btn');
 const menu = document.querySelector('.js-menu-list');
 

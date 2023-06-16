@@ -45,7 +45,7 @@ html {
         background-size: 893px 1024px, cover;
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 991px) {
         background-size: 669px 768px, cover;
     }
 
@@ -67,5 +67,12 @@ html {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

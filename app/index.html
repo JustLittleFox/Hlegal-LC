@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="icon" type="image/svg+xml" href="./img/logo-site.svg">
     <title>Hlegal</title>
 </head>
@@ -147,11 +149,9 @@
     </div>
     <section class="main container" role="main">
         <h2 class="slider-hero visually-hidden"></h2>
-        <article class="slider">
+        <article class="slider js-slider">
             <div class="slider__box">
-
                 <img class="slider__box-img img-responsive" src="./img/team-1.jpg" alt="">
-
                 <div class="slider__box-text">
                     <a class="slider__box-link" href="">команда<svg width="12" height="13" viewBox="0 0 12 13"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -166,12 +166,42 @@
                     <p class="slider__box-name">Олександр Олександровський</p>
                     <p class="slider__box-desc">Керуючий партнер</p>
                 </div>
+            </div>
+            <div class="slider__box">
+                <img class="slider__box-img img-responsive" src="./img/team-2.jpg" alt="">
+                <div class="slider__box-text">
+                    <a class="slider__box-link" href="">команда<svg width="12" height="13" viewBox="0 0 12 13"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <h2 class="slider__box-headline">Ми звикли брати на себе відповідальність
+                        та завжди гарантуємо
+                        чесну,
+                        вчасну допомогу, навіть у
+                        ситуаціях, коли більшість безсилі.</h2>
+                    <p class="slider__box-name">Оксана Кобзарь</p>
+                    <p class="slider__box-desc">Керуючий партнер</p>
+                </div>
+            </div>
+            <div class="slider__box">
+                <img class="slider__box-img img-responsive" src="./img/team-3.jpg" alt="">
+                <div class="slider__box-text">
+                    <a class="slider__box-link" href="">команда<svg width="12" height="13" viewBox="0 0 12 13"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <h2 class="slider__box-headline">Ми звикли брати на себе відповідальність
+                        та завжди гарантуємо
+                        чесну,
+                        вчасну допомогу, навіть у
+                        ситуаціях, коли більшість безсилі.</h2>
+                    <p class="slider__box-name">Сергій Бінн</p>
+                    <p class="slider__box-desc">Керуючий партнер</p>
+                </div>
+            </div>
         </article>
-        <div class="slider-buttons">
-            <button class="slider-buttons__btn active" type="button" href="#slide-1"></button>
-            <button class="slider-buttons__btn" type="button" href="#slide-2"></button>
-            <button class="slider-buttons__btn" type="button" href="#slide-3"></button>
-        </div>
     </section>
     <section class="trust-list " role="main">
         <h2 class="trust-list__headline">They already trust us</h2>
@@ -191,6 +221,9 @@
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

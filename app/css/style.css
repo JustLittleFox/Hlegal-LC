@@ -58,7 +58,7 @@ html {
     background-size: 893px 1024px, cover;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .background {
     background-size: 669px 768px, cover;
   }
@@ -81,7 +81,14 @@ html {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header {
@@ -101,7 +108,7 @@ html {
     grid-template-rows: repeat(3, min-content);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .header {
     padding: 25px 60px 0 60px;
     grid-template-rows: 1fr -webkit-min-content;
@@ -172,7 +179,7 @@ html {
     color: #FFFFFF;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .header-top {
     white-space: nowrap;
     grid-column: 2/-1;
@@ -340,7 +347,7 @@ html {
     width: auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .menu {
     margin-top: -40px;
     padding-right: 0;
@@ -374,7 +381,7 @@ html {
     height: auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .logo-box {
     padding-left: 0;
     margin-top: 26px;
@@ -422,7 +429,7 @@ html {
     margin-top: 269px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .hero {
     grid-column: -3/-1;
     -webkit-box-align: center;
@@ -526,7 +533,7 @@ html {
     line-height: 30px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .experience {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -588,7 +595,7 @@ html {
     margin-bottom: auto;
   }
 }
-@media (min-width: 1024px) and (min-width: 1200px) {
+@media (min-width: 991px) and (min-width: 1200px) {
   .experience {
     margin-top: 102px;
   }
@@ -660,7 +667,7 @@ html {
     margin-top: 11px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .main {
     margin-top: 70px;
   }
@@ -726,7 +733,7 @@ html {
     height: 100%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .main-list {
     margin-top: 60px;
   }
@@ -743,6 +750,117 @@ html {
 .slider {
   margin-top: 50px;
   font-size: 0;
+  /* Slider */
+}
+.slider .slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slider .slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slider .slick-list:focus {
+  outline: none;
+}
+.slider .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slider .slick-slider .slick-track,
+.slider .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slider .slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider .slick-track:before, .slider .slick-track:after {
+  content: "";
+  display: table;
+}
+.slider .slick-track:after {
+  clear: both;
+}
+.slick-loading .slider .slick-track {
+  visibility: hidden;
+}
+.slider .slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir=rtl] .slider .slick-slide {
+  float: right;
+}
+.slider .slick-slide img {
+  display: block;
+}
+.slider .slick-slide.slick-loading img {
+  display: none;
+}
+.slider .slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slider .slick-slide {
+  display: block;
+}
+.slick-loading .slider .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slider .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slider .slick-arrow.slick-hidden {
+  display: none;
+}
+.slider .slick-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+.slider .slick-dots button {
+  background: #24A3FF;
+  opacity: 0.2;
+  border-radius: 50%;
+  content: "";
+  cursor: pointer;
+  border: none;
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+  margin-left: 7px;
+  color: transparent;
+}
+.slider .slick-active button {
+  opacity: unset;
 }
 .slider__box {
   border-radius: 12px;
@@ -817,14 +935,14 @@ html {
     max-width: 100%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .slider {
     margin-top: 79px;
   }
   .slider__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .slider__box-img {
     -o-object-fit: cover;
@@ -857,31 +975,6 @@ html {
   }
 }
 
-.slider-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-}
-.slider-buttons__btn {
-  content: "";
-  cursor: pointer;
-  border: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #24A3FF;
-  opacity: 0.2;
-  margin-right: 7px;
-  margin-left: 7px;
-}
-.slider-buttons__btn.active {
-  opacity: unset;
-}
-
 .trust-list {
   margin-top: 60px;
 }
@@ -896,7 +989,6 @@ html {
   color: #323264;
 }
 .trust-list__item {
-  width: 100%;
   height: 120px;
 }
 .trust-list__item_01 {
@@ -918,6 +1010,9 @@ html {
   background: url(../img/adteligent-logo.svg) no-repeat center, rgb(226, 226, 228);
 }
 @media (min-width: 768px) {
+  .trust-list__item {
+    width: 100%;
+  }
   .trust-list__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -925,6 +1020,10 @@ html {
   }
   .trust-list__item.visually-hidden {
     display: block;
+    position: static;
+    margin: 0;
+    clip: auto;
+    overflow: visible;
   }
   .trust-list__item_07 {
     background: url(../img/clicky-logo.svg) no-repeat center, rgb(199, 28, 54);
@@ -945,7 +1044,7 @@ html {
     background: url(../img/ultumate-logo.svg) no-repeat center, rgb(0, 0, 0);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .trust-list__grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
