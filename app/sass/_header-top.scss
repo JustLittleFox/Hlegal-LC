@@ -19,6 +19,12 @@
 
         &__adress,
         &__fb {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 0;
+            clip: auto;
+            overflow: visible;
             display: inline-flex;
             align-items: center;
         }
