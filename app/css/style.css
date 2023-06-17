@@ -104,6 +104,9 @@ html {
   padding: 0 15px;
   padding-top: 45px;
 }
+.header--on-white {
+  color: #323264;
+}
 @media (min-width: 768px) {
   .header {
     padding-top: 12px;
@@ -160,6 +163,9 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header-top__fb--on-white path {
+    fill: #B3B3BA;
+  }
   .header-top__adress::before {
     content: "";
     width: 6px;
@@ -187,6 +193,9 @@ html {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+  }
+  .header-top__adress--on-white a {
+    color: #B3B3BA;
   }
 }
 @media (min-width: 991px) {
@@ -227,9 +236,13 @@ html {
 }
 .lang a.active {
   background: #F0145A;
+  color: #FFFFFF;
 }
 .lang a:hover {
   background: #F0145A;
+}
+.lang--on-white a {
+  color: #B3B3BA;
 }
 @media (min-width: 768px) {
   .lang {
@@ -246,6 +259,9 @@ html {
   line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
+}
+.phone--on-white {
+  color: #B3B3BA;
 }
 @media (min-width: 768px) {
   .phone {
@@ -282,6 +298,9 @@ html {
   height: calc(100vh - 250px);
   overflow: auto;
 }
+.menu__list--on-white {
+  background: #FFFFFF;
+}
 .menu__list.active {
   display: block;
 }
@@ -303,7 +322,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   display: block;
-  margin-top: 11px;
+  margin-top: 8px;
   width: 32px;
   height: 32px;
   padding: 0 5px;
@@ -312,8 +331,14 @@ html {
   background-color: transparent;
   cursor: pointer;
 }
+.menu__btn--on-white {
+  background-image: url(../img/hamburger-btn-on-white.svg);
+}
 .menu__btn.close {
   background-image: url(../img/close-burger.svg);
+}
+.menu__btn--on-white.close {
+  background-image: url(../img/close-on-white.svg);
 }
 .menu__btn:active {
   background: #E6E6F0;
@@ -355,6 +380,9 @@ html {
     color: #FFFFFF;
     margin-right: 16px;
     width: auto;
+  }
+  .menu__list--on-white a {
+    color: #24A3FF;
   }
 }
 @media (min-width: 991px) {
@@ -1262,5 +1290,34 @@ html {
   line-height: 20px;
   color: #B3B3BA;
   margin-top: 30px;
+}
+
+.breadcrumbs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323264;
+  margin-left: 4px;
+}
+.breadcrumbs__svg {
+  margin-right: 4px;
+}
+@media (min-width: 768px) {
+  .breadcrumbs {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    white-space: nowrap;
+  }
+  .breadcrumbs__svg {
+    height: 47px;
+    width: 21px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

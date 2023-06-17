@@ -3,6 +3,7 @@
     list-style: none;
     padding-left: 0;
 
+
     & a {
         text-decoration: none;
         font-weight: 700;
@@ -10,7 +11,7 @@
         line-height: 15px;
         text-align: center;
         letter-spacing: 1px;
-        color: #FFFFFF;
+        color: $text-color;
         text-transform: uppercase;
         padding: 5px 7px;
         border-radius: 8px;
@@ -18,10 +19,15 @@
 
     & a.active {
         background: $button-bg-color;
+        color: $text-color;
     }
 
     & a:hover {
         background: $button-bg-color;
+    }
+
+    &--on-white a {
+        color: $btn-grey-color;
     }
 
     @media (min-width: 768px) {

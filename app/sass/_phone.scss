@@ -6,6 +6,10 @@
     color: $text-color;
     text-decoration: none;
 
+    &--on-white {
+        color: $btn-grey-color;
+    }
+
     @media (min-width: 768px) {
         & {
             align-items: center;

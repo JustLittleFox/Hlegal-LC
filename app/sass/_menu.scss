@@ -16,6 +16,10 @@
 
     }
 
+    &__list--on-white {
+        background: $text-color;
+    }
+
     &__list.active {
         display: block;
     }
@@ -39,7 +43,7 @@
         background-repeat: no-repeat;
         background-position: center;
         display: block;
-        margin-top: 11px;
+        margin-top: 8px;
         width: 32px;
         height: 32px;
         padding: 0 5px;
@@ -49,8 +53,18 @@
         cursor: pointer;
     }
 
+    &__btn--on-white {
+        background-image: url(../img/hamburger-btn-on-white.svg);
+    }
+
+
+
     &__btn.close {
         background-image: url(../img/close-burger.svg);
+    }
+
+    &__btn--on-white.close {
+        background-image: url(../img/close-on-white.svg);
     }
 
     &__btn:active {
@@ -66,6 +80,8 @@
         &__btn {
             display: none;
         }
+
+
 
         & {
             position: static;
@@ -96,6 +112,10 @@
             color: $text-color;
             margin-right: 16px;
             width: auto;
+        }
+
+        &__list--on-white a {
+            color: $links-btn-color;
         }
 
     }

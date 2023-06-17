@@ -29,6 +29,10 @@
             align-items: center;
         }
 
+        &__fb--on-white path {
+            fill: $btn-grey-color;
+        }
+
         &__adress::before {
             content: '';
             width: 6px;
@@ -56,6 +60,10 @@
             font-size: 16px;
             line-height: 20px;
             color: $text-color;
+        }
+
+        &__adress--on-white a {
+            color: $btn-grey-color;
         }
 
     }
