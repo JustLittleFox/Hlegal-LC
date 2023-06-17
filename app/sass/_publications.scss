@@ -15,6 +15,26 @@
         color: $links-btn-color;
     }
 
+    &__link:hover {
+        text-decoration: underline;
+        color: $button-bg-color;
+
+    }
+
+    &__link svg {
+        margin-left: 1px;
+        transition: ease 0.5s;
+    }
+
+    &__link:hover path {
+        stroke: $button-bg-color;
+    }
+
+    &__link:hover svg {
+
+        transform: translateX(10px);
+    }
+
     &__hero {
         font-weight: 700;
         font-size: 30px;
@@ -59,6 +79,12 @@
         font-size: 16px;
         line-height: 20px;
         color: $links-btn-color;
+        transition: ease 0.4s;
+    }
+
+    &__box-link:hover {
+        text-decoration: underline;
+        color: $button-bg-color;
     }
 
     &__box-paragraph {

@@ -21,6 +21,7 @@
 
     &__link:hover {
         text-decoration: underline;
+        color: $button-bg-color;
 
     }
 
@@ -29,7 +30,12 @@
         transition: ease 0.5s;
     }
 
+    &__link:hover path {
+        stroke: $button-bg-color;
+    }
+
     &__link:hover svg {
+
         transform: translateX(10px);
     }
 

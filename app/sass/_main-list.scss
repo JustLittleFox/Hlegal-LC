@@ -23,6 +23,12 @@
         font-size: 22px;
         line-height: 27px;
         color: $links-btn-color;
+        transition: ease 0.4s;
+    }
+
+    &__box-link:hover {
+        color: $button-bg-color;
+        text-decoration: underline;
     }
 
     &__box-desc {

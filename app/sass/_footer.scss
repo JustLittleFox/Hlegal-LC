@@ -6,6 +6,7 @@
     &__text {
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     &__place-text {
@@ -25,10 +26,20 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $links-btn-color;
+        transition: ease 0.4s;
+    }
+
+    &__place-link:hover {
+        color: $button-bg-color;
     }
 
     &__fb {
         margin-top: 20px;
+    }
+
+    &__fb:hover path {
+        transition: ease 0.4s;
+        fill: $button-bg-color;
     }
 
     &__phone {
@@ -38,6 +49,11 @@
         font-size: 16px;
         line-height: 20px;
         margin-top: 7px;
+        transition: ease 0.4s;
+    }
+
+    &__phone:hover {
+        color: $button-bg-color;
     }
 
     &__mail {
@@ -47,6 +63,11 @@
         text-decoration: 0;
         color: $links-btn-color;
         margin-top: 10px;
+        transition: ease 0.4s;
+    }
+
+    &__mail:hover {
+        color: $button-bg-color;
     }
 
     &__policity {

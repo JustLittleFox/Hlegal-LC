@@ -131,6 +131,11 @@
         margin-right: 7px;
         margin-left: 7px;
         color: transparent;
+        transition: ease 0.4s;
+    }
+
+    .slick-dots button:hover {
+        opacity: 0.5;
     }
 
     .slick-active button {
@@ -168,6 +173,24 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $links-btn-color;
+        transition: ease 0.5s;
+    }
+
+    &__box-link:hover {
+        color: $button-bg-color;
+        text-decoration: underline;
+    }
+
+    &__box-link:hover path {
+        stroke: $button-bg-color;
+    }
+
+    &__box-link svg {
+        transition: ease 0.5s;
+    }
+
+    &__box-link:hover svg {
+        transform: translateX(10px);
     }
 
     &__box-headline {
