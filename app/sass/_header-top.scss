@@ -29,6 +29,22 @@
             align-items: center;
         }
 
+        &__adress a {
+            transition: ease 0.4s;
+        }
+
+        &__adress a:hover {
+            color: $button-bg-color;
+        }
+
+        &__fb path {
+            transition: ease 0.4s;
+        }
+
+        &__fb:hover path {
+            fill: $button-bg-color;
+        }
+
         &__fb--on-white path {
             fill: $btn-grey-color;
         }

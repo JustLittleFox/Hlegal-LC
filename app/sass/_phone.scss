@@ -5,6 +5,9 @@
     line-height: 20px;
     color: $text-color;
     text-decoration: none;
+    transition: ease 0.4s;
+
+
 
     &--on-white {
         color: $btn-grey-color;
@@ -13,6 +16,11 @@
     @media (min-width: 768px) {
         & {
             align-items: center;
+        }
+
+
+        &:hover {
+            color: $button-bg-color;
         }
 
         &::before {

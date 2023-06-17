@@ -163,6 +163,20 @@ html {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header-top__adress a {
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
+  }
+  .header-top__adress a:hover {
+    color: #F0145A;
+  }
+  .header-top__fb path {
+    -webkit-transition: ease 0.4s;
+    transition: ease 0.4s;
+  }
+  .header-top__fb:hover path {
+    fill: #F0145A;
+  }
   .header-top__fb--on-white path {
     fill: #B3B3BA;
   }
@@ -233,16 +247,21 @@ html {
   text-transform: uppercase;
   padding: 5px 7px;
   border-radius: 8px;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
 }
 .lang a.active {
   background: #F0145A;
   color: #FFFFFF;
 }
 .lang a:hover {
-  background: #F0145A;
+  background: rgba(255, 255, 255, 0.2);
 }
 .lang--on-white a {
   color: #B3B3BA;
+}
+.lang--on-white a:hover {
+  background-color: #F5F5FA;
 }
 @media (min-width: 768px) {
   .lang {
@@ -259,6 +278,8 @@ html {
   line-height: 20px;
   color: #FFFFFF;
   text-decoration: none;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
 }
 .phone--on-white {
   color: #B3B3BA;
@@ -268,6 +289,9 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .phone:hover {
+    color: #F0145A;
   }
   .phone::before {
     content: "";
@@ -283,7 +307,7 @@ html {
 }
 
 .menu {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 .menu__list {
   display: none;
@@ -316,6 +340,12 @@ html {
   background: #F5F5FA;
   border-radius: 12px;
   display: block;
+}
+.menu__list a.active {
+  color: #F0145A;
+}
+.menu__list a:active {
+  background: #E6E6F0;
 }
 .menu__btn {
   background-image: url(../img/btn-burger.svg);
@@ -365,10 +395,12 @@ html {
     padding: 0;
     height: auto;
     margin-top: 5px;
+    border-radius: 0;
   }
   .menu__list li {
     padding: 0;
     margin: 0;
+    border-radius: 0;
   }
   .menu__list a {
     background: none;
@@ -380,9 +412,27 @@ html {
     color: #FFFFFF;
     margin-right: 16px;
     width: auto;
+    border-radius: 0;
+    -webkit-transition: ease 0.1s;
+    transition: ease 0.1s;
+  }
+  .menu__list a.active {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
+  }
+  .menu__list a:hover {
+    border-bottom: 2px solid #FFFFFF;
   }
   .menu__list--on-white a {
     color: #24A3FF;
+  }
+  .menu__list--on-white a:hover {
+    color: #24A3FF;
+    border-bottom: 2px solid #24A3FF;
+  }
+  .menu__list--on-white a.active {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
   }
 }
 @media (min-width: 991px) {
@@ -451,14 +501,35 @@ html {
   line-height: 46px;
   color: #FFFFFF;
   height: 100%;
-}
-.hero__scroll {
   margin-bottom: auto;
 }
 .hero__link {
-  padding: 9px;
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+.hero__link path {
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+.hero__link:hover {
+  border-color: #F0145A;
+}
+.hero__link:hover path {
+  stroke: #F0145A;
 }
 @media (min-width: 768px) {
   .hero {
@@ -510,6 +581,15 @@ html {
   white-space: nowrap;
   background-color: transparent;
   border: none;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.experience__btn:hover {
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .experience__btn:not(:last-child) {
   margin-right: 29px;
@@ -679,8 +759,17 @@ html {
   text-transform: uppercase;
   color: #24A3FF;
 }
+.main__link:hover {
+  text-decoration: underline;
+}
 .main__link svg {
   margin-left: 1px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+.main__link:hover svg {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 .main__text {
   font-weight: 700;

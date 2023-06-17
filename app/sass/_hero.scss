@@ -13,17 +13,37 @@
         line-height: 46px;
         color: $text-color;
         height: 100%;
-    }
-
-    &__scroll {
         margin-bottom: auto;
     }
 
+    &__scroll {
+        // margin-bottom: auto;
+    }
+
     &__link {
-        padding: 9px;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2px;
         border: 2px solid $border-color;
         border-radius: 50%;
+        transition: ease 0.4s;
     }
+
+    &__link path {
+        transition: ease 0.4s;
+    }
+
+    &__link:hover {
+        border-color: $button-bg-color;
+    }
+
+    &__link:hover path {
+        stroke: $button-bg-color;
+    }
+
 
     @media (min-width: 768px) {
         grid-column: 1 / 4;

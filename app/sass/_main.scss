@@ -16,10 +16,21 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $links-btn-color;
+
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+
     }
 
     &__link svg {
         margin-left: 1px;
+        transition: ease 0.5s;
+    }
+
+    &__link:hover svg {
+        transform: translateX(10px);
     }
 
     &__text {

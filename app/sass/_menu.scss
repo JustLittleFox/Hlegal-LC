@@ -1,5 +1,5 @@
 .menu {
-    margin-top: 5px;
+    margin-top: 7px;
 
     &__list {
         display: none;
@@ -37,6 +37,16 @@
         border-radius: 12px;
         display: block;
     }
+
+    &__list a.active {
+        color: $button-bg-color;
+    }
+
+    &__list a:active {
+        background: $dots-grey-color;
+    }
+
+
 
     &__btn {
         background-image: url(../img/btn-burger.svg);
@@ -95,11 +105,13 @@
             padding: 0;
             height: auto;
             margin-top: 5px;
+            border-radius: 0;
         }
 
         &__list li {
             padding: 0;
             margin: 0;
+            border-radius: 0;
         }
 
         &__list a {
@@ -112,10 +124,35 @@
             color: $text-color;
             margin-right: 16px;
             width: auto;
+            border-radius: 0;
+            transition: ease 0.1s;
         }
+
+        &__list a.active {
+            color: $button-bg-color;
+            border-bottom: 2px solid $button-bg-color;
+        }
+
+        &__list a:hover {
+            border-bottom: 2px solid $text-color;
+
+
+        }
+
 
         &__list--on-white a {
             color: $links-btn-color;
+        }
+
+        &__list--on-white a:hover {
+            color: $links-btn-color;
+            border-bottom: 2px solid $links-btn-color;
+
+        }
+
+        &__list--on-white a.active {
+            color: $button-bg-color;
+            border-bottom: 2px solid $button-bg-color;
         }
 
     }
