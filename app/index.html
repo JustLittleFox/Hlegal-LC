@@ -9,7 +9,7 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="icon" type="image/svg+xml" href="./img/logo-site.svg">
-    <title>Hlegal</title>
+    <title>Main | Hlegal LC</title>
 </head>
 
 <body class="body">
@@ -52,9 +52,42 @@
                     <li><a href="#">services</a></li>
                     <li><a href="#">team</a></li>
                     <li><a href="#">publications</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#" id="openPopupLink">contact</a></li>
                 </ul>
             </nav>
+            <div class="popup-container">
+                <div class="popup-content">
+                    <button class="popup-content__popup-close-btn" id="closePopupBtn" type="button"
+                        aria-label="close-button"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                            <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <legend class="popup-content__headline">We would like to help you</legend>
+                    <form class="popup-content__form" action="https://fom.in.ua/echo" method="post">
+                        <label for="name"></label>
+                        <input class="popup-content__name" type="text" id="name" name="name" placeholder="Name"
+                            required>
+
+                        <label for="message"></label>
+                        <textarea class="popup-content__message" id="message" name="message" rows="4"
+                            placeholder="Message" required></textarea>
+
+                        <label class="popup-content__paragraph" for="phone email">How to answer you?</label>
+
+                        <label for="phone"></label>
+                        <input class="popup-content__phone" type="tel" id="phone" name="phone"
+                            placeholder="Phone number" required>
+
+                        <label for="email"></label>
+                        <input class="popup-content__email" type="email" id="email" name="email" placeholder="Email"
+                            required>
+
+                        <button class="popup-content__submit" type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
             <div class="hero">
                 <h1 class="hero__text">you legal solutions provider</h1>
                 <div class="hero__scroll">

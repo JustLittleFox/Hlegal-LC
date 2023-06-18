@@ -1,0 +1,159 @@
+.popup-content {
+    background-color: $menu-list-link;
+    padding: 0 30px 30px;
+    border-radius: 12px;
+    width: 650px;
+    height: 615px;
+    overflow: auto;
+
+    &__popup-close-btn {
+        background: transparent;
+        border: none;
+        margin-top: 10px;
+        margin-left: 96%;
+        border-radius: 8px;
+        transition: ease 0.4s;
+    }
+
+    &__popup-close-btn:hover {
+        background-color: $btn-grey-color;
+    }
+
+    &__popup-close-btn:active {
+        background-color: $btn-grey-color;
+    }
+
+    &__headline {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        @include gradient-text
+    }
+
+    &__form {
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    &__name {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 19px;
+        color: $button-bg-color;
+        line-height: 26px;
+        padding-left: 15px;
+        background-color: $text-color;
+        height: 56px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    &__name::placeholder {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $btn-grey-color;
+    }
+
+    &__message {
+        font-family: 'Montserrat';
+        background-color: $text-color;
+        font-weight: 700;
+        font-size: 19px;
+        color: $button-bg-color;
+        line-height: 26px;
+        padding-left: 15px;
+        resize: none;
+        height: 130px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    &__message::placeholder {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $btn-grey-color;
+    }
+
+    &__paragraph {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $btn-grey-color;
+        margin-top: 15px;
+    }
+
+    &__phone {
+        font-family: 'Montserrat';
+        background-color: $text-color;
+        font-weight: 700;
+        font-size: 19px;
+        color: $button-bg-color;
+        line-height: 26px;
+        padding-left: 15px;
+        height: 56px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    &__phone::placeholder {
+
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $btn-grey-color;
+    }
+
+    &__email {
+        font-family: 'Montserrat';
+        background-color: $text-color;
+        font-weight: 700;
+        font-size: 19px;
+        color: $button-bg-color;
+        line-height: 26px;
+        padding-left: 15px;
+        height: 56px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    &__email::placeholder {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $btn-grey-color;
+    }
+
+    &__submit {
+        margin-top: 0;
+        font-weight: 700;
+        border: none;
+        font-size: 16px;
+        line-height: 20px;
+        background: $links-btn-color;
+        box-shadow: 0px 0px 20px $box-shadow-blue;
+        border-radius: 12px;
+        color: $text-color;
+        padding: 18px 30px;
+        transition: ease 0.5s;
+    }
+
+    &__submit:hover {
+        background: $button-bg-color;
+        box-shadow: 0px 0px 20px $button-bg-color;
+    }
+
+    &__submit:active {
+        background: $button-bg-color;
+        box-shadow: 0px 0px 20px $button-bg-color;
+    }
+
+}

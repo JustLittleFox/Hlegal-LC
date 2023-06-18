@@ -33,4 +33,55 @@ langLinks.forEach(link => {
     });
 });
 
+const openPopupLink = document.getElementById('openPopupLink');
+const popupContainer = document.querySelector('.popup-container');
+const popupContent = document.querySelector('.popup-content');
+
+function openPopup(event) {
+    event.preventDefault();
+
+    popupContainer.style.display = 'flex';
+}
+
+function closePopup() {
+    popupContainer.style.display = 'none';
+}
+
+popupContainer.addEventListener('click', function (event) {
+    if (event.target === popupContainer) {
+        closePopup();
+    }
+});
+
+openPopupLink.addEventListener('click', openPopup);
+
+const menuLinks = document.querySelectorAll('.menu__list a');
+
+function handleLinkClick(event) {
+    menuLinks.forEach(link => link.classList.remove('active'));
+
+    event.target.classList.add('active');
+}
+
+menuLinks.forEach(link => link.addEventListener('click', handleLinkClick));
+
+function closePopup() {
+    popupContainer.style.display = 'none';
+    menuLinks.forEach(link => link.classList.remove('active'));
+}
+
+popupContainer.addEventListener('click', function (event) {
+    if (event.target === popupContainer) {
+        closePopup();
+    }
+});
+openPopupLink.addEventListener('click', function (event) {
+    event.preventDefault();
+});
+
+closePopupBtn.addEventListener('click', closePopup);
+
+
+
+
 
