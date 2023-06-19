@@ -31,11 +31,17 @@ langLinks.forEach(link => {
         });
         this.classList.add('active');
     });
+
+
 });
+
+
 
 const openPopupLink = document.getElementById('openPopupLink');
 const popupContainer = document.querySelector('.popup-container');
 const popupContent = document.querySelector('.popup-content');
+
+
 
 function openPopup(event) {
     event.preventDefault();
@@ -54,6 +60,7 @@ popupContainer.addEventListener('click', function (event) {
 });
 
 openPopupLink.addEventListener('click', openPopup);
+
 
 const menuLinks = document.querySelectorAll('.menu__list a');
 
@@ -77,6 +84,11 @@ popupContainer.addEventListener('click', function (event) {
 });
 openPopupLink.addEventListener('click', function (event) {
     event.preventDefault();
+});
+
+document.getElementById('resetBtn').addEventListener('click', function () {
+    var form = document.querySelector('.popup-content__form');
+    form.reset();
 });
 
 closePopupBtn.addEventListener('click', closePopup);

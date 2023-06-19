@@ -6,13 +6,18 @@
     height: 615px;
     overflow: auto;
 
+    &__buttons {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__popup-close-btn {
         background: transparent;
         border: none;
-        margin-top: 10px;
-        margin-left: 96%;
         border-radius: 8px;
         transition: ease 0.4s;
+        align-self: flex-end;
     }
 
     &__popup-close-btn:hover {
@@ -20,6 +25,22 @@
     }
 
     &__popup-close-btn:active {
+        background-color: $btn-grey-color;
+    }
+
+    &__popup-reset-btn {
+        background: transparent;
+        border: none;
+        margin-top: 10px;
+        border-radius: 8px;
+        transition: ease 0.4s;
+    }
+
+    &__popup-reset-btn:hover {
+        background-color: $btn-grey-color;
+    }
+
+    &__popup-reset-btn:active {
         background-color: $btn-grey-color;
     }
 
