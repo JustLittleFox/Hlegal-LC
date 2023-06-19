@@ -4,6 +4,24 @@ $('.js-slider').slick({
     mobileFirst: true,
 });
 
+$('.js-slider-about').slick({
+    arrows: false,
+    dots: true,
+    mobileFirst: true,
+    slidesToShow: 1,
+    responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true
+            }
+        }
+    ]
+});
+
 const btn = document.querySelector('.js-menu-btn');
 const menu = document.querySelector('.js-menu-list');
 

@@ -1,8 +1,26 @@
-.slider {
-    margin-top: 50px;
+.slider-about {
     font-size: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 -20px;
 
-    /* Slider */
+
+    &__box {
+        border-radius: 12px;
+        height: 90px;
+        background: url(../img/achievment-1.jpg) no-repeat center,
+            #fff;
+
+    }
+
+    &__box-img {
+        display: flex;
+        height: 40px;
+        align-self: center;
+        justify-self: center;
+    }
+
+
 
     .slick-slider {
         position: relative;
@@ -20,6 +38,7 @@
     }
 
     .slick-list {
+
         position: relative;
         overflow: hidden;
         display: block;
@@ -72,6 +91,8 @@
         float: left;
         height: 100%;
         min-height: 1px;
+        margin-right: 20px;
+        margin-left: 20px;
 
         [dir="rtl"] & {
             float: right;
@@ -142,141 +163,23 @@
         opacity: unset;
     }
 
-
-    &__box {
-        border-radius: 12px;
-        background: $menu-list-link;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__box-img {
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        object-fit: cover;
-        width: 100%;
-        height: 500px;
-    }
-
-    &__box-text {
-        padding: 0 30px;
-        margin-top: 30px;
-    }
-
-    &__box-link {
-        width: fit-content;
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: $links-btn-color;
-        transition: ease 0.5s;
-    }
-
-    &__box-link:hover {
-        color: $button-bg-color;
-        text-decoration: underline;
-    }
-
-    &__box-link:hover path {
-        stroke: $button-bg-color;
-    }
-
-    &__box-link svg {
-        transition: ease 0.5s;
-    }
-
-    &__box-link:hover svg {
-        transform: translateX(10px);
-    }
-
-    &__box-headline {
-        margin-top: 5px;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 37px;
-        word-wrap: break-word;
-        @include gradient-text;
-    }
-
-    &__box-name {
-        margin-top: 30px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: $btn-grey-color;
-    }
-
-    &__box-desc {
-        margin-top: 5px;
-        padding-bottom: 30px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        color: $btn-grey-color;
-    }
-
-    @media (min-width: 768px) {
-        margin-top: 72px;
-
-        &__box {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &__box-headline {
-            font-size: 38px;
-            line-height: 46px;
-
-        }
-
-        &__box-img {
-            object-fit: cover;
-            height: 500px;
-            max-width: 100%;
-        }
-    }
-
     @media (min-width: 991px) {
-        margin-top: 79px;
-
         &__box {
-            display: flex;
-            flex-direction: row;
-        }
-
-        &__box-img {
-            object-fit: cover;
-            height: 528px;
-            max-width: 44%;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 12px;
-        }
-
-        &__box-text {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-
-
-        }
-
-        &__box-headline {
-            margin-bottom: auto;
+            height: 110px;
         }
     }
+}
 
-    @media (min-width: 1200px) {
-        &__box-img {
-            object-fit: cover;
-            height: 344px;
-            max-width: 30%;
 
-        }
-    }
 
+.slider-hero {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    padding-top: 30px;
+    margin-bottom: -20px;
 }
