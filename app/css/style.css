@@ -1459,18 +1459,12 @@ html {
   color: #24A3FF;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .footer__place-link:hover {
   color: #F0145A;
 }
 .footer__fb {
   margin-top: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .footer__fb:hover path {
   -webkit-transition: ease 0.4s;
@@ -1486,9 +1480,6 @@ html {
   margin-top: 7px;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .footer__phone:hover {
   color: #F0145A;
@@ -1503,9 +1494,6 @@ html {
   margin-top: 10px;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .footer__mail:hover {
   color: #F0145A;
@@ -1517,6 +1505,7 @@ html {
   color: #B3B3BA;
   margin-top: 30px;
 }
+
 .breadcrumbs {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
