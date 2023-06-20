@@ -2,6 +2,7 @@ $('.js-slider').slick({
     arrows: false,
     dots: true,
     mobileFirst: true,
+    focusOnSelect: true,
 });
 
 $('.js-slider-about').slick({

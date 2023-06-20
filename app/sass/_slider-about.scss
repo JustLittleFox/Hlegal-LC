@@ -8,16 +8,84 @@
     &__box {
         border-radius: 12px;
         height: 90px;
-        background: url(../img/achievment-1.jpg) no-repeat center,
-            #fff;
+        background-size: contain;
 
     }
 
-    &__box-img {
-        display: flex;
-        height: 40px;
-        align-self: center;
-        justify-self: center;
+    &__box--01 {
+        background: url(../img/achievment-1.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--02 {
+        background: url(../img/achievment-2.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--03 {
+        background: url(../img/achievment-3.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--04 {
+        background: url(../img/achievment-4.jpg) no-repeat center,
+            $text-color;
+
+    }
+
+    &__box--05 {
+        background: url(../img/achievment-1.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--06 {
+        background: url(../img/achievment-2.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--07 {
+        background: url(../img/achievment-3.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--08 {
+        background: url(../img/achievment-4.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--09 {
+        background: url(../img/achievment-1.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--10 {
+        background: url(../img/achievment-2.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--11 {
+        background: url(../img/achievment-3.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--12 {
+        background: url(../img/achievment-4.jpg) no-repeat center,
+            $text-color;
+    }
+
+    &__box--01,
+    &__box--02,
+    &__box--03,
+    &__box--04,
+    &__box--05,
+    &__box--06,
+    &__box--07,
+    &__box--08,
+    &__box--09,
+    &__box--10,
+    &__box--11,
+    &__box--12 {
+        background-size: auto 40px;
     }
 
 
@@ -133,12 +201,20 @@
 
     .slick-dots {
         list-style: none;
-        margin: 0;
+        margin: 30px 90px;
         padding: 0;
         display: flex;
-        justify-content: center;
-        margin-top: 30px;
+        overflow: auto;
+
+        @media (min-width: 554px) {
+            justify-content: center;
+        }
     }
+
+    .slick-dots::-webkit-scrollbar {
+        display: none;
+    }
+
 
     .slick-dots button {
         background: $links-btn-color;
@@ -167,19 +243,20 @@
         &__box {
             height: 110px;
         }
+
+        &__box--01,
+        &__box--02,
+        &__box--03,
+        &__box--04,
+        &__box--05,
+        &__box--06,
+        &__box--07,
+        &__box--08,
+        &__box--09,
+        &__box--10,
+        &__box--11,
+        &__box--12 {
+            background-size: auto 60px;
+        }
     }
-}
-
-
-
-.slider-hero {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #323264;
-    padding-top: 30px;
-    margin-bottom: -20px;
 }
