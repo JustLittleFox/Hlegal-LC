@@ -3,6 +3,7 @@
     padding-top: 30px;
 
 
+
     &__link {
         display: inline-flex;
         align-items: center;
@@ -47,6 +48,7 @@
         margin-top: 30px;
         padding: 0;
         padding-bottom: 30px;
+        border-bottom: 2px solid $border-color-02;
     }
 
     &__item {
