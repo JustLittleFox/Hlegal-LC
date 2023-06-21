@@ -8,54 +8,7 @@
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="icon" type="image/svg+xml" href="./img/logo-site.svg">
-    <title>Publications | Hlegal LC</title>
-    <style>
-        .checkbox {
-            width: 222px;
-            height: 42px;
-            background-color: #E6E6F0;
-            border-radius: 12px;
-            position: relative;
-            color: #323264;
-            overflow: hidden;
-        }
-
-        #checkbox_toggle {
-            display: none;
-        }
-
-        .checkbox .toggle {
-            width: 105px;
-            height: 38px;
-            position: absolute;
-            border-radius: 10px;
-            left: 2px;
-            cursor: pointer;
-            transition: 0.4s;
-            background: #fff;
-        }
-
-        .checkbox .slide {
-            width: 233px;
-            height: 42px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            cursor: pointer;
-        }
-
-        .checkbox .slide .text {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            z-index: 100;
-            cursor: pointer;
-        }
-
-        .check:checked+.checkbox .slide .toggle {
-            transform: translateX(113px);
-        }
-    </style>
+    <title>Team | Hlegal LC</title>
 </head>
 
 <body class="body">
@@ -128,128 +81,144 @@
                         fill="#F0145A" />
                 </svg>
 
-                publications</div>
+                team</div>
         </div>
         <nav class="menu">
             <button class="menu__btn menu__btn--on-white js-menu-btn" type="button"></button>
             <ul class="menu__list menu__list--on-white js-menu-list">
                 <li><a href="about.html">about us</a></li>
                 <li><a href="services.html">services</a></li>
-                <li><a href="team.html">team</a></li>
-                <li><a class="active" href="publications.html">publications</a></li>
+                <li><a class="active" href="team.html">team</a></li>
+                <li><a href="publications.html">publications</a></li>
                 <li><a href="#" id="openPopupLink">contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="publ-bg" role="main" style="margin-top: 60px;">
-        <section class="publications main container" role="main">
-            <div class="publications__toggler">
-                <input class="check" type="checkbox" id="checkbox_toggle">
-                <div class="checkbox">
-                    <div class="slide">
-                        <label for="checkbox_toggle" class="toggle"></label>
-                        <label for="checkbox_toggle" class="text">news</label>
-                        <label for="checkbox_toggle" class="text">articles</label>
-                    </div>
+    <main class="main container">
+        <h2 class="main__headline">We are used to taking responsibility and always guarantee honest, timely assistance,
+            even in situations where most are powerless.</h2>
+        <section class="team">
+            <div class="team__list">
+                <article class="team__item">
+                    <div class="team__box">
+                        <img class="team__box-img img-responsive" src="./img/alexander.jpg" alt="alexander">
+                        <div class="team__crumbs">
+                            <div class="team__box-text">
+                                <p class="team__box-name">Alexander Alexandrovsky</p>
+                                <p class="team__box-dec">Managing partner</p>
 
-                </div>
-            </div>
-            <div class="publications__head">
-                <h2 class="publications__hero">We have something to tell</h2>
-            </div>
-            <div class="publications__list" style="row-gap: 30px;">
-                <article class="publications__item">
-                    <div class="publications__box">
-                        <img class="publications__box-img img-responsive" src="./img/equity.jpg" alt="equity-tablets">
-                        <div class="publications__box-text">
-                            <a class="publications__box-link" href="">Equity associate</a>
-                            <p class="publications__box-paragraph">April 22</p>
-                            <p class="publications__box-desc">I'm a jun on projects. I am a co-owner of a law firm.
-                                How
-                                it
-                                happened. Before entering my parents told me that if I…</p>
+                            </div>
+                            <div class="team__box-link">
+                                <a class="team__link" href="#"><svg width="10" height="17" viewBox="0 0 10 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.833496 15.5L7.8335 8.5L0.833495 1.5" stroke="#24A3FF"
+                                            stroke-width="2" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="publications__item">
-                    <div class="publications__box">
-                        <img class="publications__box-img img-responsive" src="./img/gdpr.jpg" alt="gpdr-firm">
-                        <div class="publications__box-text">
-                            <a class="publications__box-link" href="">Penalty for the Good Corporation: what will
-                                happen
-                                to
-                                Google and others for violating the GDPR</a>
-                            <p class="publications__box-paragraph">September 29</p>
-                            <p class="publications__box-desc">And why the recovery of 50 million euros could be a
-                                fateful
-                                precedent According to Mind.ua January 21 National Commission for Data Protection.
-                            </p>
+                <article class="team__item">
+                    <div class="team__box">
+                        <img class="team__box-img img-responsive" src="./img/evgeny.jpg" alt="evgeny">
+                        <div class="team__crumbs">
+                            <div class="team__box-text">
+                                <p class="team__box-name">Evgeny Patrikov</p>
+                                <p class="team__box-dec">Equity partner, Attorney-at-law</p>
+                            </div>
+                            <div class="team__box-link">
+                                <a class="team__link" href="#"><svg width="10" height="17" viewBox="0 0 10 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.833496 15.5L7.8335 8.5L0.833495 1.5" stroke="#24A3FF"
+                                            stroke-width="2" />
+                                    </svg>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="publications__item">
-                    <div class="publications__box">
-                        <img class="publications__box-img img-responsive" src="./img/peoples.jpg" alt="many-peoples">
-                        <div class="publications__box-text">
-                            <a class="publications__box-link" href="">Millennial Testament</a>
-                            <p class="publications__box-paragraph">August 19</p>
-                            <p class="publications__box-desc">What and how modern vloggers, opinion leaders and
-                                crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
-                                looks
-                                like
-                                this: an apartment in…</p>
+                <article class="team__item">
+                    <div class="team__box">
+                        <img class="team__box-img img-responsive" src="./img/vladislav.jpg" alt="vladislav">
+                        <div class="team__crumbs">
+                            <div class="team__box-text">
+                                <p class="team__box-name">Vladislav Melnik</p>
+                                <p class="team__box-dec">Associate</p>
+                            </div>
+                            <div class="team__box-link">
+                                <a class="team__link" href="#"><svg width="10" height="17" viewBox="0 0 10 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.833496 15.5L7.8335 8.5L0.833495 1.5" stroke="#24A3FF"
+                                            stroke-width="2" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="publications__item">
-                    <div class="publications__box">
-                        <img class="publications__box-img img-responsive" src="./img/language-law.jpg"
-                            alt="language-law">
-                        <div class="publications__box-text">
-                            <a class="publications__box-link" href="">Language Law: How to Make Your Website
-                                Relevant</a>
-                            <p class="publications__box-paragraph">August 19</p>
-                            <p class="publications__box-desc">Natalia Kyryk, head of content studio Wordfactory.ua
-                                First, it's beautiful! This is the number one argument in favor of the
-                                Ukrainian-language site. Secondly, it is effective. In…</p>
+                <article class="team__item">
+                    <div class="team__box">
+                        <img class="team__box-img img-responsive" src="./img/sergey.jpg" alt="sergey">
+                        <div class="team__crumbs">
+                            <div class="team__box-text">
+                                <p class="team__box-name">Sergey Binn</p>
+                                <p class="team__box-dec">Associate</p>
+                            </div>
+                            <div class="team__box-link">
+                                <a class="team__link" href="#"><svg width="10" height="17" viewBox="0 0 10 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.833496 15.5L7.8335 8.5L0.833495 1.5" stroke="#24A3FF"
+                                            stroke-width="2" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="publications__item">
-                    <div class="publications__box">
-                        <img class="publications__box-img img-responsive" src="./img/childs.jpg"
-                            alt="childs-and-teacher">
-                        <div class="publications__box-text">
-                            <a class="publications__box-link" href="">Reimbursement of the child's tuition fees in
-                                kindergarten and school</a>
-                            <p class="publications__box-paragraph">February 5, 2018</p>
-                            <p class="publications__box-desc">What we are talking about In June this year, the
-                                Verkhovna
-                                Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…
-                            </p>
+                <article class="team__item">
+                    <div class="team__box">
+                        <img class="team__box-img img-responsive" src="./img/oksana.jpg" alt="oksana">
+                        <div class="team__crumbs">
+                            <div class="team__box-text">
+                                <p class="team__box-name">Oksana Kobzar</p>
+                                <p class="team__box-dec">Equity partner, Attorney-at-law</p>
+                            </div>
+                            <div class="team__box-link">
+                                <a class="team__link" href="#"><svg width="10" height="17" viewBox="0 0 10 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.833496 15.5L7.8335 8.5L0.833495 1.5" stroke="#24A3FF"
+                                            stroke-width="2" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <article class="publications__item" style="grid-column: auto;  height: 100%; margin-bottom: 28px;">
-                    <div class="publications__box">
-                        <!-- <img class="publications__box-img img-responsive" src="" alt=""> -->
-                        <div class="publications__box-text">
-                            <a class="publications__box-link" href="">Currency control is dead, long live currency
-                                control!</a>
-                            <p class="publications__box-paragraph">June 14, 2018</p>
-                            <p class="publications__box-desc">Experts hold conferences, round tables and other
-                                events on
-                                "liberalization of currency legislation." Lawyers-experts-novelists rub their
-                                fingers
-                                about "ctrl + c / ctrl + v".</p>
+                <article class="team__item">
+                    <div class="team__box">
+                        <img class="team__box-img img-responsive" src="./img/julia.jpg" alt="julia">
+                        <div class="team__crumbs">
+                            <div class="team__box-text">
+                                <p class="team__box-name">Julia Wolk</p>
+                                <p class="team__box-dec">Associate, Attorney-at-law</p>
+                            </div>
+                            <div class="team__box-link">
+                                <a class="team__link" href="#"><svg width="10" height="17" viewBox="0 0 10 17"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.833496 15.5L7.8335 8.5L0.833495 1.5" stroke="#24A3FF"
+                                            stroke-width="2" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </article>
-                <div class="publications__button"><button class="publications__btn" type="button">More
-                        publications</button></div>
             </div>
         </section>
-
+    </main>
+    <div class="publ-bg">
         <footer class="footer container" id="footer">
             <div class="footer__text">
                 <div class="footer__place">
@@ -282,12 +251,8 @@
             </div>
         </footer>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/script.js"></script>
 </body>
-
-
-</html>

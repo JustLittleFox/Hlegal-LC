@@ -2,6 +2,23 @@
     margin-top: 30px;
     padding: 0 30px;
 
+    &__headline {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        @include gradient-text;
+
+        @media (min-width:768px) {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        @media (min-width: 991px) {
+            padding: 0 180px;
+        }
+    }
+
     &__head {
         margin-bottom: 30px;
     }
@@ -20,7 +37,6 @@
     }
 
     &__link:hover {
-        text-decoration: underline;
         color: $button-bg-color;
 
     }

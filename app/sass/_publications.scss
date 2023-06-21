@@ -2,6 +2,13 @@
     margin-top: 0;
     padding-top: 30px;
 
+    &__toggler {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
     &__link {
         display: inline-flex;
         align-items: center;
@@ -15,7 +22,6 @@
     }
 
     &__link:hover {
-        text-decoration: underline;
         color: $button-bg-color;
 
     }
@@ -83,7 +89,6 @@
     }
 
     &__box-link:hover {
-        text-decoration: underline;
         color: $button-bg-color;
     }
 
