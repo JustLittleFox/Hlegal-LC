@@ -1,93 +1,18 @@
 .slider-about {
     font-size: 0;
     padding-top: 50px;
-    padding-bottom: 30px;
     margin: 0 -20px;
+    border-bottom: 2px solid $border-color-02;
 
 
     &__box {
+        display: flex;
+        justify-content: center;
         border-radius: 12px;
         height: 90px;
-        background-size: contain;
+        background-color: $text-color;
 
     }
-
-    &__box--01 {
-        background: url(../img/achievment-1.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--02 {
-        background: url(../img/achievment-2.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--03 {
-        background: url(../img/achievment-3.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--04 {
-        background: url(../img/achievment-4.jpg) no-repeat center,
-            $text-color;
-
-    }
-
-    &__box--05 {
-        background: url(../img/achievment-1.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--06 {
-        background: url(../img/achievment-2.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--07 {
-        background: url(../img/achievment-3.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--08 {
-        background: url(../img/achievment-4.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--09 {
-        background: url(../img/achievment-1.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--10 {
-        background: url(../img/achievment-2.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--11 {
-        background: url(../img/achievment-3.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--12 {
-        background: url(../img/achievment-4.jpg) no-repeat center,
-            $text-color;
-    }
-
-    &__box--01,
-    &__box--02,
-    &__box--03,
-    &__box--04,
-    &__box--05,
-    &__box--06,
-    &__box--07,
-    &__box--08,
-    &__box--09,
-    &__box--10,
-    &__box--11,
-    &__box--12 {
-        background-size: auto 40px;
-    }
-
 
 
     .slick-slider {
@@ -166,8 +91,13 @@
             float: right;
         }
 
-        img {
-            display: block;
+        & img {
+            height: 40px;
+            align-self: center;
+
+            @media (min-width: 991px) {
+                height: 60px;
+            }
         }
 
         &.slick-loading img {
@@ -206,7 +136,7 @@
         display: flex;
         overflow: auto;
 
-        @media (min-width: 554px) {
+        @media (min-width: 425px) {
             justify-content: center;
         }
     }
@@ -242,21 +172,6 @@
     @media (min-width: 991px) {
         &__box {
             height: 110px;
-        }
-
-        &__box--01,
-        &__box--02,
-        &__box--03,
-        &__box--04,
-        &__box--05,
-        &__box--06,
-        &__box--07,
-        &__box--08,
-        &__box--09,
-        &__box--10,
-        &__box--11,
-        &__box--12 {
-            background-size: auto 60px;
         }
     }
 }

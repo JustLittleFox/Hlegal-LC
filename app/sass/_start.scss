@@ -33,6 +33,35 @@ html {
     background-color: #47474b;
 }
 
+.background-services {
+    @include background-with-gradient-services;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+
+    &::after {
+        content: '';
+        height: 10px;
+        background: $bg-after;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+
+    &::before {
+        content: '';
+        height: 10px;
+        background: $bg-before;
+        border-radius: 0px 0px 12px 12px;
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+    }
+
+}
+
 .background {
     @include background-with-gradient;
     border-radius: 0 0 12px 12px;

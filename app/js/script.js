@@ -12,6 +12,15 @@ $('.js-slider-about').slick({
     slidesToShow: 1,
     responsive: [
         {
+            breakpoint: 424,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
             breakpoint: 767,
             settings: {
                 slidesToShow: 4,
@@ -22,6 +31,7 @@ $('.js-slider-about').slick({
         }
     ]
 });
+
 
 const btn = document.querySelector('.js-menu-btn');
 const menu = document.querySelector('.js-menu-list');
