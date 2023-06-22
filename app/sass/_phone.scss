@@ -8,8 +8,6 @@
     transition: ease 0.4s;
     white-space: nowrap;
 
-
-
     &--on-white {
         color: $btn-grey-color;
     }
@@ -18,7 +16,6 @@
         & {
             align-items: center;
         }
-
 
         &:hover {
             color: $button-bg-color;

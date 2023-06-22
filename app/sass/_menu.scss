@@ -61,8 +61,6 @@
         background: $dots-grey-color;
     }
 
-
-
     &__btn {
         background-image: url(../img/btn-burger.svg);
         background-repeat: no-repeat;
@@ -81,8 +79,6 @@
     &__btn--on-white {
         background-image: url(../img/hamburger-btn-on-white.svg);
     }
-
-
 
     &__btn.close {
         background-image: url(../img/close-burger.svg);
@@ -105,8 +101,6 @@
         &__btn {
             display: none;
         }
-
-
 
         & {
             position: static;
@@ -150,8 +144,6 @@
 
         &__list a:hover {
             border-bottom: 2px solid $text-color;
-
-
         }
 
 
@@ -162,7 +154,6 @@
         &__list--on-white a:hover {
             color: $links-btn-color;
             border-bottom: 2px solid $links-btn-color;
-
         }
 
         &__list--on-white a.active {
@@ -186,11 +177,8 @@
         }
 
         &__list a {
-
             margin-right: 0;
             margin-left: 16px;
-
         }
     }
-
 }

@@ -2,8 +2,6 @@
     margin-top: 50px;
     font-size: 0;
 
-    /* Slider */
-
     .slick-slider {
         position: relative;
         display: block;
@@ -85,8 +83,6 @@
             display: none;
         }
 
-        // display: none;
-
         &.dragging img {
             pointer-events: none;
         }
@@ -141,7 +137,6 @@
     .slick-active button {
         opacity: unset;
     }
-
 
     &__box {
         border-radius: 12px;
@@ -230,7 +225,6 @@
         &__box-headline {
             font-size: 38px;
             line-height: 46px;
-
         }
 
         &__box-img {
@@ -260,8 +254,6 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-
-
         }
 
         &__box-headline {
@@ -274,7 +266,6 @@
             object-fit: cover;
             height: 344px;
             max-width: 30%;
-
         }
     }
 

@@ -23,7 +23,6 @@
 
     &__link:hover {
         color: $button-bg-color;
-
     }
 
     &__link svg {
@@ -36,7 +35,6 @@
     }
 
     &__link:hover svg {
-
         transform: translateX(10px);
     }
 
@@ -112,7 +110,6 @@
         border-top: 4px solid $border-color-02;
         padding-top: 15px;
         padding-bottom: 30px;
-
     }
 
     &__button {
@@ -160,8 +157,6 @@
             grid-template-columns: repeat(2, 1fr);
             column-gap: 30px;
             margin-bottom: 0;
-
-
         }
 
         &__item:last-child {

@@ -4,16 +4,13 @@
     margin: 0 -20px;
     border-bottom: 2px solid $border-color-02;
 
-
     &__box {
         display: flex;
         justify-content: center;
         border-radius: 12px;
         height: 90px;
         background-color: $text-color;
-
     }
-
 
     .slick-slider {
         position: relative;
@@ -31,7 +28,6 @@
     }
 
     .slick-list {
-
         position: relative;
         overflow: hidden;
         display: block;
@@ -103,8 +99,6 @@
         &.slick-loading img {
             display: none;
         }
-
-        // display: none;
 
         &.dragging img {
             pointer-events: none;

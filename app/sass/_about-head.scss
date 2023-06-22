@@ -29,7 +29,6 @@
     &__stats {
         margin-top: 29px;
         border-left: 4px solid $dots-grey-color;
-
         padding-left: 30px;
     }
 
@@ -44,8 +43,6 @@
         font-size: 36px;
         line-height: 44px;
         @include gradient-text;
-
-
     }
 
     &__stats-firstline svg {
@@ -79,7 +76,6 @@
             margin-right: 29px;
             margin-top: 0;
             width: 80%;
-
         }
 
         &__hero {
