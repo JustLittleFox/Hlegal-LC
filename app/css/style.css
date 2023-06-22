@@ -45,86 +45,15 @@
   background-color: #47474b;
 }
 
-.background-services {
-  background: linear-gradient(254deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
-  border-radius: 0 0 12px 12px;
-  position: relative;
-}
-.background-services::after {
-  content: "";
-  height: 10px;
-  background: #CACADB;
-  border-radius: 0px 0px 12px 12px;
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: -10px;
-}
-.background-services::before {
-  content: "";
-  height: 10px;
-  background: #E7E7F2;
-  border-radius: 0px 0px 12px 12px;
-  position: absolute;
-  left: 40px;
-  right: 40px;
-  bottom: -20px;
-}
-
-.background {
-  background: url(../img/background.svg) no-repeat center top, linear-gradient(254deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
-  border-radius: 0 0 12px 12px;
-  position: relative;
-}
-.background::after {
-  content: "";
-  height: 10px;
-  background: #CACADB;
-  border-radius: 0px 0px 12px 12px;
-  position: absolute;
-  left: 20px;
-  right: 20px;
-  bottom: -10px;
-}
-.background::before {
-  content: "";
-  height: 10px;
-  background: #E7E7F2;
-  border-radius: 0px 0px 12px 12px;
-  position: absolute;
-  left: 40px;
-  right: 40px;
-  bottom: -20px;
-}
-@media (min-width: 768px) {
-  .background {
-    background-size: 893px 1024px, cover;
-  }
-}
-@media (min-width: 991px) {
-  .background {
-    background-size: 669px 768px, cover;
-  }
-}
-@media (min-width: 1200px) {
-  .background {
-    background-size: 697px 799px, cover;
-  }
-}
-
-.publ-bg {
-  background: rgb(245, 245, 250);
+.container {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
 }
 
 .img-responsive {
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  max-width: 1440px;
-  min-width: 375px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -2339,5 +2268,76 @@
   .team__list {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.background-services {
+  background: linear-gradient(254deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+}
+.background-services::after {
+  content: "";
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+}
+.background-services::before {
+  content: "";
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
+}
+
+.background {
+  background: url(../img/background.svg) no-repeat center top, linear-gradient(254deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) no-repeat;
+  border-radius: 0 0 12px 12px;
+  position: relative;
+}
+.background::after {
+  content: "";
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+}
+.background::before {
+  content: "";
+  height: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: -20px;
+}
+@media (min-width: 768px) {
+  .background {
+    background-size: 893px 1024px, cover;
+  }
+}
+@media (min-width: 991px) {
+  .background {
+    background-size: 669px 768px, cover;
+  }
+}
+@media (min-width: 1200px) {
+  .background {
+    background-size: 697px 799px, cover;
+  }
+}
+
+.publ-bg {
+  background: rgb(245, 245, 250);
 }
 /*# sourceMappingURL=style.css.map */
